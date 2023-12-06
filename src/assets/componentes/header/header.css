@@ -1,0 +1,109 @@
+header {
+    height: 80px;
+    background: #3586ff;
+    padding: 15px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 105555555;
+    transition: all ease-in-out 0.3s;
+
+    & div {
+        display: flex;
+        align-items: center;
+    }
+
+    & .white {
+        color: white;
+        font-size: 30pt;
+    }
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+    box-sizing: border-box;
+
+    & .link {
+        text-decoration: none;
+        color: white!important;
+        transition: all .1s ease-in-out;
+    }
+    & .link:hover {
+        text-decoration: underline;
+        color: white!important;
+    font-size: 1.1em;    }
+}
+
+.hover:hover {
+    filter: drop-shadow(0 0 15px white);
+    cursor: pointer;
+}
+
+.animado {
+    transition: all 0.2s ease-in-out;
+    animation: animacion 5s infinite;
+}
+
+.fecha {
+    font-size: 1.8em !important;
+}
+
+@keyframes animacion {
+    0% {
+        transform: rotate(0deg);
+        filter: drop-shadow(0 0 0px white);
+    }
+
+    15% {
+        transform: rotate(359deg);
+        filter: drop-shadow(0 0 15px white);
+    }
+
+    16% {
+        transform: rotate(360deg);
+    }
+
+    30% {
+        filter: drop-shadow(0 0 0px white);
+    }
+
+    45% {
+        filter: drop-shadow(0 0 15px white);
+    }
+
+    60% {
+        filter: drop-shadow(0 0 0px white);
+    }
+
+    75% {
+        filter: drop-shadow(0 0 15px white);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@media screen and (orientation: portrait) {
+    header {
+        height: 60px;
+    }
+
+    .fecha {
+        font-size: 1.2em !important;
+    }
+
+    footer h2 {
+        font-size: 1em !important;
+    }
+
+    .ocultomobile {
+        display: none;
+        transition: all ease-in-out 0.3s;
+    }
+
+}

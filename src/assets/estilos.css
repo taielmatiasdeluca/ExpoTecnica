@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400;700&family=Unica+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.unica {
+  font-family: 'Unica One', cursive;
+
+}
+
+.titilium {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.fw200 {
+  font-weight: 200;
+}
+
+.fw700 {
+  font-weight: 700;
+}
+
+.bandideado{
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 100%;
+  gap: 14px;
+  justify-content: space-between;
+  
+}
+.filtros{
+  width: 80%; margin: auto;
+  display: flex; gap: 24px; flex-direction: column;
+}
+
+@media  screen and (orientation : portrait) {
+.backAnimated{
+  background-color: red;
+}
+  .filtros{ width: 96%; margin: auto;}
+  
+}

@@ -1,0 +1,75 @@
+a{text-decoration: none;}
+.tarjeta {
+    height: 450px;
+   flex: 1 0 350px;
+    overflow: hidden;
+    border-radius: 44px;
+    box-shadow: 0 0 15px -2px rgba(0, 0, 0, 0.2);
+    aspect-ratio: 3 / 1!important;
+
+}
+
+.banner {
+    height: 250px;
+    width: 100%;
+    background-color: beige;
+    position: relative;
+    border-radius: 44px;
+    overflow: hidden;
+}
+
+.imgportada {
+    height: 100%;
+    width: 100%;
+    background: #3586ff7b;
+}
+
+.alimentos {
+    padding: 10px 2rem;
+    position: absolute;
+    bottom: 30px;
+    right: 0px;   
+    line-height: 1.5em;
+    color: white;
+    background-color: rgba(13, 144, 22, 0.831);
+    border-radius: 40px 0 0 40px;
+    box-shadow: 0 0 10px -3px rgba(47, 219, 58, 0.848)
+}
+.info {
+    padding: 10px 2rem;
+    position: absolute;
+    bottom: 30px;
+    right: 0px;   
+    line-height: 1.5em;
+    color: white;
+    background-color: rgba(42, 83, 232, 0.859);
+    border-radius: 40px 0 0 40px;
+    box-shadow: 0 0 10px -3px rgba(33, 55, 136, 0.859)
+}
+.detallesProyecto{
+    padding: 14px;
+    height: calc( 100% - 250px);
+    position: relative;
+}
+
+.btnLink{position: absolute;
+    border-radius: 25px;
+    background: #3586ff;
+    padding: 8px 30px;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    transition: all .1s linear;
+
+}
+.btnLink:hover {
+    cursor: pointer;
+   
+    box-shadow: 0 3px 10px -3px #2154a0;
+}
+.btnLink:active {
+    cursor: pointer;
+    background: #5599ff;
+    box-shadow: 0 0px 10px -3px #2154a0;
+    transform: translateY(1px);
+}
